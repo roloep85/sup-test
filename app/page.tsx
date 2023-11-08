@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import GameCard from "./components/GameCard"
 
@@ -52,12 +52,12 @@ export default function Home() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8">
           <div className="card pt-8 text-white shadow-xl">
             <figure>
-              <img src="/img/rectangle-9.png" alt="Game" />
+              <Image width={400} height={100} src="/img/rectangle-9.png" alt="Game" />
             </figure>
             <div className="card-body">
               <h2 className="card-title capitalize">core philosophies</h2>
               <div className="flex gap-x-5">
-                <img src="/img/ellipse-5.png" alt="" />
+                <Image width={100} height={100} src="/img/ellipse-5.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>
@@ -74,12 +74,12 @@ export default function Home() {
           </div>
           <div className="card pt-8 text-white shadow-xl">
             <figure>
-              <img src="/img/rectangle-11.png" alt="Game" />
+              <Image width={400} height={100} src="/img/rectangle-11.png" alt="Game" />
             </figure>
             <div className="card-body">
               <h2 className="card-title capitalize">core philosophies</h2>
               <div className="flex gap-x-5">
-                <img src="/img/ellipse-6.png" alt="" />
+                <Image width={100} height={100} src="/img/ellipse-6.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>
@@ -94,37 +94,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <GameCard person={"Roland Prinsloo"} company={"Priro Design"} />
+          <GameCard />
           <div className="card pt-8 text-white shadow-xl">
             <figure>
-              <img src="/img/rectangle-17.png" alt="Game" />
+              <Image width={400} height={100} src="/img/rectangle-17.png" alt="Game" />
             </figure>
             <div className="card-body">
               <h2 className="card-title capitalize">core philosophies</h2>
               <div className="flex gap-x-5">
-                <img src="/img/ellipse-8.png" alt="" />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button
-                  className="p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5"
-                >
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="card pt-8 text-white shadow-xl">
-            <figure>
-              <img src="/img/rectangle-18.png" alt="Game" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <img src="/img/ellipse-9.png" alt="" />
+                <Image width={50} height={50} src="/img/ellipse-8.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>
@@ -141,12 +119,34 @@ export default function Home() {
           </div>
           <div className="card pt-8 text-white shadow-xl">
             <figure>
-              <img src="/img/rectangle-19.png" alt="Game" />
+              <Image width={400} height={100} src="/img/rectangle-18.png" alt="Game" />
             </figure>
             <div className="card-body">
               <h2 className="card-title capitalize">core philosophies</h2>
               <div className="flex gap-x-5">
-                <img src="/img/ellipse-10.png" alt="" />
+                <Image width={50} height={50} src="/img/ellipse-9.png" alt="" />
+                <div>
+                  <h4>Name Surname</h4>
+                  <small>Company</small>
+                </div>
+              </div>
+              <div className="card-actions">
+                <button
+                  className="p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5"
+                >
+                  <span>Live Demo</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="card pt-8 text-white shadow-xl">
+            <figure>
+              <Image width={400} height={100} src="/img/rectangle-19.png" alt="Game" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title capitalize">core philosophies</h2>
+              <div className="flex gap-x-5">
+                <Image width={50} height={50} src="/img/ellipse-10.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>
@@ -183,7 +183,7 @@ export default function Home() {
                 className="h-[1px] my-4 bg-gradient-to-r from-white to-transparent"
               ></div>
               <div className="card-actions flex gap-x-5">
-                <img src="/img/ellipse-12.png" alt="" />
+                <Image width={100} height={100} src="/img/ellipse-12.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>
@@ -209,7 +209,7 @@ export default function Home() {
                 className="h-[1px] my-4 bg-gradient-to-r from-white to-transparent"
               ></div>
               <div className="card-actions flex gap-x-5">
-                <img src="/img/ellipse-13.png" alt="" />
+                <Image width={100} height={100} src="/img/ellipse-13.png" alt="" />
                 <div>
                   <h4>Name Surname</h4>
                   <small>Company</small>

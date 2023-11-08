@@ -1,16 +1,17 @@
 import React from 'react'
 
-const GameCard = ({ person, company }) => {
-    console.log(person);
+import Image from 'next/image'
+
+const GameCard = () => {
   return (
     <div className="card pt-8 text-white shadow-xl">
         <figure>
-        <img src="/img/rectangle-13.png" alt="Game" />
+        <Image src="/img/rectangle-13.png" className="max-w-full" alt="Game" width={400} height={100} />
         </figure>
         <div className="card-body">
         <h2 className="card-title capitalize">core philosophies</h2>
         <div className="flex gap-x-5">
-            <img src="/img/ellipse-7.png" alt="" />
+            <Image src="/img/ellipse-7.png" alt="" width={50} height={50}/>
             <div>
             <h4>Name Surname</h4>
             <small>Company</small>

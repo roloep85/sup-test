@@ -46,6 +46,12 @@ export default function RootLayout({
           </div>
         </div>
         {children}
+        <footer className="bg-footer-image bg-cover">
+          <div className="container mx-auto p-20">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis porro
+            cumque molestias facere illo laboriosam pariatur eaque est similique id.
+          </div>
+      </footer>
       </body>
     </html>
   );
