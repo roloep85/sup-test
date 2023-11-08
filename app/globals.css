@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: 'Ondo';
+  src: url(/fonts/OndoBoldRegular.ttf);
+}
+
+/* @font-face {
+  font-family: 'Lato';
+  src: url(/fonts/Lato-Regular.ttf);
+} */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* font-family: 'Lato'; */
+  font-size: 16px;
+}
+
+/* TODO: Scope to page */
+.heading {
+  font-family: 'Ondo';
+  line-height: 116.6%;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+
+.heading span {
+  background: -webkit-linear-gradient(0deg, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slant {
+  transform: skew(-20deg);
+}
+
+.card {
+  border: 1px solid #6542F4;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(217, 217, 217, 0.04) 100%);
+  backdrop-filter: blur(25px);
+}
+
+.gamer {
+  background: url('/img/artboard-11.png'), lightgray -91.869px 41.66px / 102.737% 92.356% no-repeat;
+  background-size: cover;
+  mix-blend-mode: color-dodge;
+}
