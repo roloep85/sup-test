@@ -32,6 +32,10 @@ body {
 }
 
 /* TODO: Scope to page */
+.logo {
+  font-family: 'Ondo';
+}
+
 .heading {
   font-family: 'Ondo';
   line-height: 116.6%;
@@ -40,23 +44,24 @@ body {
 }
 
 .heading span {
-  background: -webkit-linear-gradient(0deg, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
+  background: -webkit-linear-gradient(0, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.slant {
+.btn-slant {
+  background: -webkit-linear-gradient(0, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
   transform: skew(-20deg);
 }
 
-.card {
+.card, .dropdown-content {
   border: 1px solid #6542F4;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(217, 217, 217, 0.04) 100%);
   backdrop-filter: blur(25px);
 }
 
 .gamer {
-  background: url('/img/artboard-11.png'), lightgray -91.869px 41.66px / 102.737% 92.356% no-repeat;
+  background: url('/img/artboard-11.png');
   background-size: cover;
   mix-blend-mode: color-dodge;
 }
