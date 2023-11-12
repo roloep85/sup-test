@@ -1,33 +1,14 @@
 import Image from "next/image";
 
-import Card from "./components/GameCard";
+import Hero from "./components/Hero";
+import Shards from "./components/Shards";
+// import GameCard from "./components/GameCard";
 
 export default function Home() {
   return (
     <>
-      <div className="hero min-h-screen relative">
-        <div className="absolute w-96 h-96 rounded-full blur-3xl left-0 top-20 opacity-25 bg-pink-dark"></div>
-        <div className="hero-overlay gamer"></div>
-        <div className="relative text-white p-5 sm:w-10/12">
-          <div className="max-w-md">
-            <h1 className="text-3xl lg:text-5xl font-bold font-display uppercase heading mb-2">
-              Let your mind <span>explore</span> new world
-            </h1>
-            <p className="mb-5">
-              Playing electronic games, whether through consoles, computers,
-              mobile phones or another medium altogether. Gaming is a nuanced
-              term that suggests regular gameplay, possibly as a hobby.
-            </p>
-            <button className="p-4 w-full lg:w-40 font-bold border-0 uppercase btn-slant text-white mt-5">
-              Buy Now
-            </button>
-            <button className="p-4 w-full lg:w-40 font-bold border-0 uppercase to-magenta slant text-white mt-5">
-              Play Now
-            </button>
-          </div>
-        </div>
-      </div>
-      <section className="container mx-auto p-5 lg:p-20">
+      <Hero />
+      <section className="container mx-auto p-5 sm:p-10 md:p-20">
         <div className="max-w-lg mb-10 mx-auto">
           <h2 className="text-3xl lg:text-5xl font-bold heading mb-2 lg:text-center text-white">
             choose your <span>FAvorite</span> games
@@ -37,39 +18,65 @@ export default function Home() {
             trailers, screenshots, and information about release.
           </p>
         </div>
+        <div className="carousel relative z-10 carousel-center gap-10 rounded-box">
+          <div className="carousel-item">
+            <img src="/img/slide-1.png" alt="Wolf" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/slide-2.png" alt="Wolf" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/slide-3.png" alt="Wolf" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/slide-1.png" alt="Wolf" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/slide-2.png" alt="Wolf" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/slide-3.png" alt="Wolf" />
+          </div>
+        </div>
       </section>
-      <section className="container mx-auto p-5 lg:p-20">
-        <div className="game-card grid grid-cols-2 shadow-xl">
-          <figure>
+      <section className="container mx-auto p-5 sm:p-10 md:p-20">
+        <div className="game-card pb-0 lg:p-5 grid xl:grid-cols-2 gap-10 shadow-xl max-w-6xl mx-auto">
+          <figure className="order-last xl:order-none">
             <Image
-              width={400}
+              className="xl:absolute bottom-0 left-0"
+              width={600}
               height={100}
               src="/img/vr-gaming-woman.png"
-              alt="Game"
+              alt="VR Woman"
             />
           </figure>
           <div className="card-body">
-            <h2 className="text-3xl lg:text-5xl font-bold heading mb-2 text-white">
+            <h2 className="text-3xl xl:text-5xl font-bold heading mb-2 text-white">
               Discover the <span>Virtual</span> Reality Gaming{" "}
             </h2>
             <p className="text-white mt-3">
-              Click the button to listen on Spotiwhy app.
+              A well-designed gaming header often incorporates elements such as
+              game characters, iconic symbols, vibrant colors, and dynamic
+              visuals to convey excitement, adventure, and the immersive nature
+              of gaming.
             </p>
-            <div className="card-actions justify-end">
-              <button className="btn btn-primary">Listen</button>
+            <div className="card-actions justify-start mt-10">
+              <button className="btn btn-slant w-40 p-4 font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
+                Play now
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <section className="container mx-auto p-5 lg:p-20">
+      <section className="container mx-auto p-5 sm:p-10 md:p-20">
         <div className="max-w-lg mb-10 mx-auto">
           <h2 className="text-3xl lg:text-5xl font-bold heading mb-2 lg:text-center text-white">
             Welcome to the top <span>games</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 width={400}
                 height={100}
@@ -93,8 +100,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 width={400}
                 height={100}
@@ -118,8 +125,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 src="/img/rectangle-13.png"
                 className="max-w-full"
@@ -144,8 +151,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 width={400}
                 height={100}
@@ -169,8 +176,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 width={400}
                 height={100}
@@ -194,8 +201,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
-            <figure>
+          <div className="game-card text-white shadow-xl">
+            <figure className="px-5 pt-5">
               <Image
                 width={400}
                 height={100}
@@ -226,11 +233,17 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="container mx-auto p-5 lg:p-20">
+      <section className="container mx-auto p-5 sm:p-10 md:p-20">
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8">
-          <div className="game-card pt-8 text-white shadow-xl">
+          <div className="game-card text-white shadow-xl">
+            <Shards />
             <div className="card-body">
-              <img src="/img/rating-full.svg" className="w-32" alt="Rating" />
+              <Image
+                width={128}
+                height={50}
+                src="/img/rating-full.svg"
+                alt="Rating"
+              />
               <p>
                 One of the standout features of this gaming website is its
                 extensive library of game guides and tutorials. It has helped me
@@ -253,9 +266,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="game-card pt-8 text-white shadow-xl">
+          <div className="game-card text-white shadow-xl">
+            <Shards />
             <div className="card-body">
-              <img src="/img/rating-full.svg" className="w-32" alt="Rating" />
+              <Image
+                width={128}
+                height={50}
+                src="/img/rating-full.svg"
+                alt="Rating"
+              />
               <p>
                 One of the standout features of this gaming website is its
                 extensive library of game guides and tutorials. It has helped me

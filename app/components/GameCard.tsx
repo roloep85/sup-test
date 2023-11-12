@@ -4,15 +4,9 @@ import Image from "next/image";
 
 const GameCard = () => {
   return (
-    <div className="card pt-8 text-white shadow-xl">
-      <figure>
-        <Image
-          src="/img/rectangle-13.png"
-          className="max-w-full"
-          alt="Game"
-          width={400}
-          height={100}
-        />
+    <div className="game-card text-white shadow-xl">
+      <figure className="px-5 pt-5">
+        <Image src="" className="w-full" alt="Game" width={500} height={50} />
       </figure>
       <div className="card-body">
         <h2 className="card-title capitalize">core philosophies</h2>

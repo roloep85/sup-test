@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   return (
-    <div className="navbar absolute invert z-20">
+    <div className="navbar container inset-x-0 mx-auto px-5 sm:px-10 md:px-20 absolute invert z-20">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost btn-circle lg:hidden">
@@ -43,7 +43,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl logo">
+        <a className="btn btn-ghost hover:bg-transparent p-0 normal-case text-xl logo">
           <Image
             src="/img/logo.svg"
             className="max-w-full text-slate-50 invert"
