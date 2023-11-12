@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -42,7 +43,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl logo">board</a>
+        <a className="btn btn-ghost normal-case text-xl logo">
+          <Image
+            src="/img/logo.svg"
+            className="max-w-full text-slate-50 invert"
+            alt="Game"
+            width={50}
+            height={50}
+          />
+          board
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal font-bold uppercase px-1">
