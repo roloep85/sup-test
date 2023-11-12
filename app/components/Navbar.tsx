@@ -5,44 +5,6 @@ const Navbar = () => {
   return (
     <div className="navbar container inset-x-0 mx-auto px-5 sm:px-10 md:px-20 absolute z-20">
       <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost btn-circle lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
-          >
-            <li>
-              <a className="text-white">Products</a>
-            </li>
-            <li>
-              <a className="text-white">Apps & Games</a>
-            </li>
-            <li>
-              <a className="text-white">Features</a>
-            </li>
-            <li>
-              <a className="text-white">Support</a>
-            </li>
-            <li>
-              <a className="text-white">About</a>
-            </li>
-          </ul>
-        </div>
         <a className="btn btn-ghost hover:bg-transparent p-0 normal-case text-xl text-white logo">
           <Image
             src="/img/logo.svg"
@@ -84,6 +46,44 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
+        <div className="dropdown lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabIndex={0}
+            className="menu menu-full dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 right-0 block"
+          >
+            <li>
+              <a className="text-white my-2">Products</a>
+            </li>
+            <li>
+              <a className="text-white my-2">Apps & Games</a>
+            </li>
+            <li>
+              <a className="text-white my-2">Features</a>
+            </li>
+            <li>
+              <a className="text-white my-2">Support</a>
+            </li>
+            <li>
+              <a className="text-white my-2">About</a>
+            </li>
+          </ul>
+        </div>
         <button className="btn btn-ghost btn-circle">
           <div className="indicator">
             <svg
