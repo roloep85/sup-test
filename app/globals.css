@@ -43,7 +43,7 @@ body {
   text-transform: uppercase;
 }
 
-.heading span {
+.gradient-text {
   background: -webkit-linear-gradient(0, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,7 +62,13 @@ body {
 }
 
 .gamer {
-  background: url('/img/artboard-11.png');
-  background-size: cover;
-  mix-blend-mode: color-dodge;
+  background: none;
+}
+
+@media screen and (min-width: 640px) {
+  .gamer {
+    background: url('/img/artboard-11.png');
+    background-size: cover;
+    mix-blend-mode: color-dodge;
+  }
 }

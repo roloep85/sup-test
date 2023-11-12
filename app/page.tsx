@@ -2,16 +2,82 @@ import Image from "next/image";
 
 import Hero from "./components/Hero";
 import Shards from "./components/Shards";
-// import GameCard from "./components/GameCard";
+import GameCard from "./components/GameCard";
+// async function getDataTest() {
+//   const res = await fetch(
+//     "https://5932f11a76652a0011dcf8d6.mockapi.io/people",
+//     { cache: "no-cache" }
+//   );
 
-export default function Home() {
+//   if (!res.ok) {
+//     throw new Error("Failed to fetch data");
+//   }
+
+//   return res.json();
+// }
+
+export default async function Home() {
+  const cardData = [
+    {
+      username: "Cameron Williamson",
+      company: "Gillette",
+      src: "/img/rectangle-9.png",
+      avatar: "/img/ellipse-5.png",
+    },
+    {
+      username: "Dianne Russell",
+      company: "Louis Vuitton",
+      src: "/img/rectangle-11.png",
+      avatar: "/img/ellipse-6.png",
+    },
+    {
+      username: "Jane Cooper",
+      company: "MasterCard",
+      src: "/img/rectangle-13.png",
+      avatar: "/img/ellipse-7.png",
+    },
+    {
+      username: "Cody Fisher",
+      company: "The Walt Disney Company",
+      src: "/img/rectangle-17.png",
+      avatar: "/img/ellipse-8.png",
+    },
+    {
+      username: "Wade Warren",
+      company: "Gillette",
+      src: "/img/rectangle-18.png",
+      avatar: "/img/ellipse-9.png",
+    },
+    {
+      username: "Robert Fox",
+      company: "L'Oréal",
+      src: "/img/rectangle-19.png",
+      avatar: "/img/ellipse-10.png",
+    },
+  ];
+
+  // const cardData = await getDataTest();
+  // userData.forEach((element) => {
+  //   if (element.id == 1)
+  //     Object.assign(element, { src: "/img/rectangle-9.png" });
+  //   else if (element.id == 2)
+  //     Object.assign(element, { src: "/img/rectangle-11.png" });
+  //   else if (element.id == 3)
+  //     Object.assign(element, { src: "/img/rectangle-13.png" });
+  //   else if (element.id == 4)
+  //     Object.assign(element, { src: "/img/rectangle-17.png" });
+  //   else if (element.id == 5)
+  //     Object.assign(element, { src: "/img/rectangle-18.png" });
+  //   else Object.assign(element, { src: "/img/rectangle-19.png" });
+  // });
+
   return (
     <>
       <Hero />
       <section className="container mx-auto p-5 sm:p-10 md:p-20">
         <div className="max-w-lg mb-10 mx-auto">
           <h2 className="text-3xl lg:text-5xl font-bold heading mb-2 lg:text-center text-white">
-            choose your <span>FAvorite</span> games
+            choose your <span className="gradient-text">FAvorite</span> games
           </h2>
           <p className="lg:text-center text-white mt-3">
             Offer sneak peeks and previews of upcoming games, including
@@ -52,7 +118,8 @@ export default function Home() {
           </figure>
           <div className="card-body">
             <h2 className="text-3xl xl:text-5xl font-bold heading mb-2 text-white">
-              Discover the <span>Virtual</span> Reality Gaming{" "}
+              Discover the <span className="gradient-text">Virtual</span>{" "}
+              Reality Gaming{" "}
             </h2>
             <p className="text-white mt-3">
               A well-designed gaming header often incorporates elements such as
@@ -71,166 +138,13 @@ export default function Home() {
       <section className="container mx-auto p-5 sm:p-10 md:p-20">
         <div className="max-w-lg mb-10 mx-auto">
           <h2 className="text-3xl lg:text-5xl font-bold heading mb-2 lg:text-center text-white">
-            Welcome to the top <span>games</span>
+            Welcome to the top <span className="gradient-text">games</span>
           </h2>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                width={400}
-                height={100}
-                src="/img/rectangle-9.png"
-                alt="Game"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image width={50} height={50} src="/img/ellipse-5.png" alt="" />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                width={400}
-                height={100}
-                src="/img/rectangle-11.png"
-                alt="Game"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image width={50} height={50} src="/img/ellipse-6.png" alt="" />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                src="/img/rectangle-13.png"
-                className="max-w-full"
-                alt="Game"
-                width={400}
-                height={100}
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image src="/img/ellipse-7.png" alt="" width={50} height={50} />
-                <div>
-                  <h4></h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                width={400}
-                height={100}
-                src="/img/rectangle-17.png"
-                alt="Game"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image width={50} height={50} src="/img/ellipse-8.png" alt="" />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                width={400}
-                height={100}
-                src="/img/rectangle-18.png"
-                alt="Game"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image width={50} height={50} src="/img/ellipse-9.png" alt="" />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="game-card text-white shadow-xl">
-            <figure className="px-5 pt-5">
-              <Image
-                width={400}
-                height={100}
-                src="/img/rectangle-19.png"
-                alt="Game"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title capitalize">core philosophies</h2>
-              <div className="flex gap-x-5">
-                <Image
-                  width={50}
-                  height={50}
-                  src="/img/ellipse-10.png"
-                  alt=""
-                />
-                <div>
-                  <h4>Name Surname</h4>
-                  <small>Company</small>
-                </div>
-              </div>
-              <div className="card-actions">
-                <button className="btn-slant p-4 w-full font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                  <span>Live Demo</span>
-                </button>
-              </div>
-            </div>
-          </div>
+          {cardData.map((data, id: number) => (
+            <GameCard key={id} {...data} />
+          ))}
         </div>
       </section>
       <section className="container mx-auto p-5 sm:p-10 md:p-20">
