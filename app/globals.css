@@ -9,7 +9,7 @@
 }
 
 @font-face {
-  font-family: 'Ondo';
+  font-family: "Ondo";
   src: url(/fonts/OndoBoldRegular.ttf);
 }
 
@@ -33,36 +33,60 @@ body {
 
 /* TODO: Scope to page */
 .logo {
-  font-family: 'Ondo';
+  font-family: "Ondo";
 }
 
 .heading {
-  font-family: 'Ondo';
+  font-family: "Ondo";
   line-height: 116.6%;
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(0, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
+  background: -webkit-linear-gradient(
+    0,
+    #6542f4 11.84%,
+    #f976ff 51.56%,
+    #b50098 86.46%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .btn-slant {
-  background: -webkit-linear-gradient(0, #6542F4 11.84%, #F976FF 51.56%, #B50098 86.46%);
+  background: -webkit-linear-gradient(
+    0,
+    #6542f4 11.84%,
+    #f976ff 51.56%,
+    #b50098 86.46%
+  );
+  display: inline-block;
   transform: skew(-20deg);
 }
 
-.game-card { 
-  border: 1px solid #6542F4;
+.btn-slant > span {
+  display: inline-block;
+  transform: skew(20deg);
+}
+
+.game-card {
+  border: 1px solid #6542f4;
   border-radius: 1rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(217, 217, 217, 0.04) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(217, 217, 217, 0.04) 100%
+  );
   backdrop-filter: blur(25px);
 }
 
 .dropdown-content {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(217, 217, 217, 0.04) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(217, 217, 217, 0.04) 100%
+  );
   backdrop-filter: blur(25px);
 }
 
@@ -72,7 +96,7 @@ body {
 
 @media screen and (min-width: 640px) {
   .gamer {
-    background: url('/img/artboard-11.png');
+    background: url("/img/artboard-11.png");
     background-size: cover;
     mix-blend-mode: color-dodge;
   }

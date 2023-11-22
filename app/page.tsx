@@ -129,7 +129,7 @@ export default async function Home() {
             </p>
             <div className="card-actions justify-start mt-10">
               <button className="btn-slant w-40 p-4 font-bold border-0 uppercase bg-gradient-to-r from-purple via-pink to-magenta slant text-white mt-5">
-                Play now
+                <span>Play now</span>
               </button>
             </div>
           </div>

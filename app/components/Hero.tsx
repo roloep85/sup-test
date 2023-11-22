@@ -18,10 +18,10 @@ const Hero = () => {
             that suggests regular gameplay, possibly as a hobby.
           </p>
           <button className="p-4 w-full lg:w-40 font-bold border-0 uppercase btn-slant text-white mt-5">
-            Buy Now
+            <span>Buy Now</span>
           </button>
           <button className="p-4 w-full lg:w-40 font-bold border-0 uppercase btn-slant-outlined text-white mt-5">
-            Play Now
+            <span>Play Now</span>
           </button>
           <div className="flex gap-2 mt-5">
             <div>
